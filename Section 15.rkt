@@ -1,44 +1,7 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
 #reader(lib "htdp-beginner-abbr-reader.ss" "lang")((modname |Section 15|) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
-;(define-struct parent (children name date eyes))
-;
-;(define Person3 (make-parent empty 'Person3 '2003 'blue))
-;(define Person4 (make-parent empty 'Person4 '2003 'Green))
-;
-;
-;(define Sebastian (make-parent (list Person3 Person4) 'Sebastian 2000 'green))
-;(define Person1 (make-parent empty 'Person1 2001 'green))
-;(define Person2 (make-parent empty 'Person2 2001 'brown))
-;
-;
-;(define Tatiana&Justus (list Sebastian))
-;(define Justus&Adopted (list Person1 Person2))
-;
-;(define Meme (make-parent empty 'Meme 1990 'red))
-;(define Tatiana (make-parent (list Sebastian) 'Tatiana 1968 'green))
-;(define Justus (make-parent (list Person1 Person2) 'Justus 1961 'brown))
-;
-;
-;;blue-eyed-descendant? : parent  ->  boolean
-;(define (blue-eyed-descendant? parent)
-;  (or (symbol=? (parent-eyes parent) 'blue)
-;      (blue-eyed-children? (parent-children parent))))
-;
-;;blue-eyed-children? : list-of-children  ->  boolean
-;(define (blue-eyed-children? aloc)
-;  (cond
-;    [(empty? aloc) false]
-;    [(cons? aloc) (or (blue-eyed-descendant? (first aloc))
-;              (blue-eyed-children? (rest aloc)))]))
-;
-;
-;(blue-eyed-children? empty)
-;(blue-eyed-descendant? Tatiana)
-;(blue-eyed-descendant? Justus)
-;(blue-eyed-children? (list Person1 Person2))
-;
-;
+
 ;;;how-far-removed-descendant: parent -> n
 ;;(define(how-far-removed-descendant parent)
 ;;  (cond
